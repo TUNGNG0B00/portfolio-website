@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Title -->
+    <title>Tung Ngo - Web Developer</title>
+</head>
+
+<body id="background-everything">
+    
+    <!-- Loading screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div id="greetingText" class="greeting-text">Loading...</div>
+    </div>
+    
+    <!-- Background section -->
+    <div class="background-section fade-effect">
+        <!-- Day and night background images -->
+        <div id="background-day" class="background-image"></div>
+        <div id="background-night" class="background-image"></div>
+
+        <!-- Main heading section -->
+        <div class="main-heads fade-effect">
+            <!-- Subhead -->
+            <p RELF-TEXT-2="WEB DEVELOPER" class="subhead">WEB DEVELOPER</p>
+            <!-- Main heading -->
+            <h1 RELF-TEXT="TUNG NGO" class="mainhead">TUNG NGO</h1>
+        </div>
+
+        <!-- Scroll logo -->
+        <img class="scroll" id="scrollText" src="scroll.png" alt="scroll logo">
+    </div>
+
+    <!-- Navigation links -->
+    <a class="about fade-effect" id="aboutLink" href="#" onclick="scrollToSection('about'); return false;">ABOUT</a>
+    <a class="portfolio fade-effect" id="portfolioLink" href="#" onclick="scrollToSection('portfolio'); return false;">PORTFOLIO</a>
+    
+    <!-- Day/Night mode switch -->
+    <div class="switch-container">
+        <img class="icon-day-night" src="dayicon.png" alt="day icon">
+        <!-- Switch -->
+        <label class="switch">
+            <input type="checkbox" onchange="switchMode(this)">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <section class="aboutMe "  id="about">
+
+<!-- ABOUT SECTION -->
+
+        <div class="aboutMeText fade-effect">
+            <p class="subhead2 fade-effect">Tung Ngo</p>
+            <h1 class="aboutHead fade-effect">ABOUT ME</h1>
+            <p class="aboutPara fade-effect">
+                They say I'm not just a developer, but a code magician <br>
+                who can make bugs disappear with a flick of my keyboard.<br>
+                My coding journey started with me mistaking HTML for a <br>
+                texting language and CSS for a secret code to unlock a portal<br>
+                to Narnia. Despite my initial confusion, I've managed <br>
+                to navigate the treacherous seas of JavaScript, dodging syntax<br>
+                errors like a pro. When I'm not glued to my screen, you can find me <br> 
+                attempting to convince my cat that debugging is not a game of <br>
+                hide-and-seek or challenging the laws of gravity by attempting <br>
+                Also code bugs scare me as much as land bugs
+            
+             </p>
+             <div class="skillSec fade-effect">
+                <div class="codeLanguages fade-effect">
+                    <p>PROGRAMMING LANGUAGES</p>
+                    <img src="icons/HTML.png" alt="HTML Logo">
+                    <img src="icons/JS.png" alt="JavaScript Logo">
+                    <img src="icons/React.png" alt="React Logo">
+                    <img src="icons/CSS.png" alt="CSS Logo">
+                    <img src="icons/Java.png" alt="Java Logo">
+                    <img src="icons/Git.png" alt="Git Logo">
+                    <img src="icons/Jira.png" alt="Jira Logo">
+                    <img src="icons/SQL.png" alt="SQL Logo">
+                </div>
+        
+                <div class="languages fade-effect">
+                    <p>LANGUAGES</p>
+                    <img src="icons/russian.png" alt="Russian Logo">
+                    <img src="icons/english.png" alt="English Logo">
+                    <img src="icons/vietnamese.png" alt="Vietnamese Logo">
+                </div>   
+    </div>
+
+    </div>
+
+    <div class="image-of-me fade-effect">
+        <img src="image-of-me.png" alt="image of me">
+    </div>
+
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="portfolioSection">
+        <p class="portfolioHeading">PORTFOLIOS</p>
+        
+        <div class="portfolio-item">
+            <div class="projectSection1 fade-effect">
+                <h2 class="project-name1 fade-effect">Astronomy Website</h2>
+                    <div class="project-video fade-effect">
+                        <div class="formats">
+                            <div class="monitor-container">
+                                <img class="monitor" id="monitor-project-1" src="monitor.png" alt="monitor format">
+                                <video class="video-overlay" id="video1" src="projects-videos/astronomy-video-website.mp4" autoplay loop muted></video>
+                            </div>
+                        
+                        
+
+                            <div class="reflections">
+                                <video class="video-monitor-reflection" id="video-reflection1" src="projects-videos/astronomy-video-website.mp4" autoplay loop muted></video>
+                                <img class="monitorReflectionRegular" id="monitor-project-1" src="monitor.png" alt="monitor reflection">
+                            </div>
+                             
+                </div>
+                
+                <div class="portfolio-buttons-paragraph-section">
+                    <div class="project-description">
+                        <p>This unfinished website was created for Dalhousie Astronomy Society.
+                            The languages used in these project include css,html,javascript, and also react
+                            showcasing a diverse set of skills in web development. </p>
+    
+                        </div>
+
+                
+                <div class="portfolio-buttons"> 
+                    <button class="view-code" onclick="viewCode('https://github.com/TUNGNG0B00/astronomy-website-react')">VIEW CODE</button>
+                    <button class="live-preview"onclick="livePreview('https://tungng0b00.github.io/astronomy-website-react/#/')">LIVE PREVIEW</button>
+                </div>
+                </div>
+
+                
+            </div>
+
+            <div class="projectSection2 fade-effect">
+                <h2 class="project-name2 fade-effect">Zoom Clone</h2>
+                    <div class="project-video fade-effect">
+                         
+                <div class="portfolio-buttons-paragraph-section">
+                    <div class="project-description">
+                        <p>The group project's aim is to develop a Zoom alternative that provides one-way filters for the users.
+                             This apllication will used for various studies conducted by Dr. Rina Wehbe, Yasaman Eskandari,
+                              and Dr. Keiko Katsuragawa </p>
+    
+                        </div>
+
+                
+                <div class="portfolio-buttons"> 
+                    <button class="view-code" onclick="viewCode('https://github.com/TUNGNG0B00/zoom-clone-group-project')">VIEW CODE</button>
+                    <button class="live-preview" id="unavailable-button">LIVE PREVIEW
+                        <span class="tooltip-text">due to GitHub limitations, the link is unavailable. However,
+                            you can access it by going through the instruction in README.nd.
+                        </span>
+                    </button>
+                    
+                </div>
+                </div>
+                        <div class="formats">
+                            <div class="monitor-container">
+                                <img class="monitor" id="monitor-project-1" src="monitor.png" alt="monitor format">
+                                <video class="video-overlay2" id="video2" src="projects-videos/zoom-clone-video.mp4" autoplay loop muted></video>
+                            </div>
+                        
+                        
+
+                            <div class="reflections">
+                                <video class="video-monitor-reflection2" id="video-reflection2" src="projects-videos/zoom-clone-video.mp4" autoplay loop muted></video>
+                                <img class="monitorReflectionRegular" id="monitor-project-1" src="monitor.png" alt="monitor reflection">
+                            </div>
+                             
+                </div>
+               
+            
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Slideshow of Odin Project's projects -->
+
+    <div class="slideshow-container fade-effect">
+        <h2 class="odin-title fade-effect">ODIN PROJECTS PORTFOLIO</h2>
+        <div class="mySlides fade">
+
+            <h3>Sign Up Form</h3>
+    
+            <div class="monitor-container">
+                <img src="monitor.png" style="width:100%"  alt="monitor format">
+                <video class="monitor-odin-format" src="projects-videos/project-1.mp4" autoplay loop muted></video>
+                <div class="portfolio-buttons-odin">
+                    <button class="view-code" onclick="viewCode('https://github.com/TUNGNG0B00/Sign-up-and-Login-Page')">VIEW CODE</button>
+                    <button class="live-preview" onclick="livePreview('https://tungng0b00.github.io/Sign-up-and-Login-Page/src/signup.html')">LIVE PREVIEW</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="mySlides fade fade-effect">
+          
+            <h3>Dashboard</h3>
+    
+            <div class="monitor-container">
+                <img src="monitor.png" style="width:100%"  alt="monitor format">
+                <video class="monitor-odin-format" src="projects-videos/project-2.mp4" autoplay loop muted></video>
+                <div class="portfolio-buttons-odin">
+                    <button class="view-code" onclick="viewCode('https://github.com/TUNGNG0B00/dashboard')">VIEW CODE</button>
+                    <button class="live-preview" onclick="livePreview('https://tungng0b00.github.io/dashboard/dashboard.html')">LIVE PREVIEW</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="mySlides fade">
+      
+            <h3>Rock Paper Scissor Game</h3>
+    
+            <div class="monitor-container">
+                <img src="monitor.png" style="width:100%"  alt="monitor format">
+                <video class="monitor-odin-format" src="projects-videos/project-3.mp4" autoplay loop muted></video>
+                <div class="portfolio-buttons-odin">
+                    <button class="view-code" onclick="viewCode('https://github.com/TUNGNG0B00/rock-paper-scissor-game')">VIEW CODE</button>
+                    <button class="live-preview" onclick="livePreview('https://tungng0b00.github.io/rock-paper-scissor-game/index%2010.15.03.html')">LIVE PREVIEW</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="mySlides fade">
+           
+            <h3>Etch-A-Sketch</h3>
+    
+            <div class="monitor-container">
+                <img src="monitor.png" style="width:100%"  alt="monitor format">
+                <video class="monitor-odin-format" src="projects-videos/project-4.mp4" autoplay loop muted></video>
+                <div class="portfolio-buttons-odin">
+                    <button class="view-code" onclick="viewCode('https://github.com/TUNGNG0B00/etch-a-sketch')">VIEW CODE</button>
+                    <button class="live-preview" onclick="livePreview('https://tungng0b00.github.io/etch-a-sketch/')">LIVE PREVIEW</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="mySlides fade">
+          
+            <h3>Calculator</h3>
+    
+            <div class="monitor-container">
+                <img src="monitor.png" style="width:100%"  alt="monitor format">
+                <video class="monitor-odin-format" src="projects-videos/project-5.mp4" autoplay loop muted></video>
+                <div class="portfolio-buttons-odin">
+                    <button class="view-code" onclick="viewCode('https://github.com/TUNGNG0B00/calculator')">VIEW CODE</button>
+                    <button class="live-preview" onclick="livePreview('https://tungng0b00.github.io/calculator/')">LIVE PREVIEW</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+           
+            <h3>Library</h3>
+    
+            <div class="monitor-container">
+                <img src="monitor.png" style="width:100%"  alt="monitor format">
+                <video class="monitor-odin-format" src="projects-videos/project-6.mp4" autoplay loop muted></video>
+                <div class="portfolio-buttons-odin">
+                    <button class="view-code" onclick="viewCode('https://github.com/TUNGNG0B00/library')">VIEW CODE</button>
+                    <button class="live-preview" onclick="livePreview('https://tungng0b00.github.io/library/Library.html')">LIVE PREVIEW</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="mySlides fade">
+           
+            <h3>Restaurant Page</h3>
+    
+            <div class="monitor-container">
+                <img src="monitor.png" style="width:100%" alt="monitor format">
+                <video class="monitor-odin-format" src="projects-videos/project-7.mp4" autoplay loop muted></video>
+                <div class="portfolio-buttons-odin">
+                    <button class="view-code" onclick="viewCode('https://github.com/TUNGNG0B00/Restpage')">VIEW CODE</button>
+                    <button class="live-preview" onclick="livePreview('https://tungng0b00.github.io/Restpage/dist/index.html')">LIVE PREVIEW</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="mySlides fade">
+           
+            <h3>Tic Tac Toe</h3>
+    
+            <div class="monitor-container">
+                <img src="monitor.png" style="width:100%">
+                <video class="monitor-odin-format" src="projects-videos/project-8.mp4" autoplay loop muted></video>
+                <div class="portfolio-buttons-odin">
+                    <button class="view-code" onclick="viewCode('https://github.com/TUNGNG0B00/tictactoe')">VIEW CODE</button>
+                    <button class="live-preview" onclick="livePreview('https://tungng0b00.github.io/tictactoe/tictactoe.html')">LIVE PREVIEW</button>
+                </div>
+            </div>
+            
+        </div>
+    
+
+        
+    
+        <a class="prev" onclick="plusSlides(-1)" >❮</a>
+        <a class="next" onclick="plusSlides(1)" > ❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2024 Tung Ngo - Web Developer</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+
+    <script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Main videos
+    var video1 = document.getElementById('video1'); // Main video for project 1
+    var video2 = document.getElementById('video2');
+  
+    var reflection1 = document.getElementById('video-reflection1'); // Reflection video for project 1
+    var reflection2 = document.getElementById('video-reflection2'); 
+
+    // Function to play all videos
+    function playAllVideos() {
+        video1.play();
+        video2.play();
+        reflection1.play();
+        reflection2.play();
+    }
+
+    // Function to pause all videos
+    function pauseAllVideos() {
+        video1.pause();
+        video2.pause();
+        reflection1.pause();
+        reflection2.pause();
+    }
+
+    // Check if videos are ready to play
+    var checkReadyState = setInterval(function () {
+      if (video1.readyState >= 3 && video2.readyState >= 3 &&
+          reflection1.readyState >= 3 && reflection2.readyState >= 3) {
+        playAllVideos();
+        clearInterval(checkReadyState);
+      }
+    }, 100);
+
+    // Synchronize play and pause across all videos
+    [video1, video2, reflection1, reflection2].forEach(function(video) {
+        video.addEventListener('play', playAllVideos);
+        video.addEventListener('pause', pauseAllVideos);
+    });
+});
+
+
+//slideshow
+let slideIndex = 0;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+ 
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+ 
+  //move back if out of range
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  
+
+  //hide all the slides
+for (const slide of slides) {
+  slide.style.display = "none";
+}
+
+for (const dot of dots) {
+  dot.classList.remove("active");
+}
+
+//show the current slide
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+//water ripple effect
+$('.background-section').ripples({
+   resolution: 512,
+   dropRadius: 20, // radius of the ripple
+   perturbance: 0.04,
+});
+
+
+
+//loading page function
+
+document.addEventListener('DOMContentLoaded', function() {
+    const greetings = ['Hello', 'Привет', 'Bonjour']; // English, Russian, French
+    const greetingDiv = document.getElementById('greetingText');
+    const loadingScreen = document.getElementById('loadingScreen');
+    let greetingIndex = 0;
+
+    function changeGreeting() {
+        // Start by fading out the current greeting
+        greetingDiv.style.opacity = 0;
+
+        // Wait for the fade-out to complete
+        setTimeout(() => {
+            if (greetingIndex >= greetings.length) {
+               
+            
+                loadingScreen.style.opacity = '0';
+                document.body.style.overflow = 'auto';
+
+                setTimeout(() => {
+                    loadingScreen.parentNode.removeChild(loadingScreen);
+                }, 1000);
+               
+            
+            } else {
+               
+                greetingDiv.textContent = greetings[greetingIndex++];
+                greetingDiv.style.opacity = 1;
+            }
+        }, 200); 
+    }
+
+    setTimeout(() => {
+        greetingDiv.textContent = greetings[greetingIndex++];
+        greetingDiv.style.opacity = 1;
+    }, 50);
+
+       setInterval(changeGreeting, 800);
+       
+
+});
+
+
+
+function switchMode(checkbox){
+    const background = document.getElementById('background-everything');
+      const switchSlider = document.getElementsByClassName('slider')[0];
+      const buttons = document.getElementsByTagName('button');
+      const prev = document.getElementsByClassName('prev')[0];
+      const next = document.getElementsByClassName('next')[0];
+      const backgroundSection=document.getElementsByClassName('background-section')[0];
+      const backgroundDay = document.getElementById('background-day');
+      const backgroundNight = document.getElementById('background-night');
+
+        var image = document.getElementsByClassName('icon-day-night')[0]; // [0] to get the first element
+        if(checkbox.checked){
+            image.src = 'nighticon.png'; 
+            image.alt = 'night icon';
+            background.style.background = '#101010';
+            
+        
+            background.style.color='white';
+            switchSlider.style.backgroundColor='white';
+            switchSlider.className='slider night-mode';
+            prev.style.color='white';
+            next.style.color='white';
+            backgroundDay.style.opacity = 0;
+            backgroundNight.style.opacity = 1;
+
+
+            for (let button of buttons) {
+                button.style.color = 'black';
+            button.style.backgroundColor = 'white';
+        }
+        
+       
+        } else {
+            image.src = 'dayicon.png'; 
+            image.alt = 'day icon';
+            background.style.background='white';
+            background.style.color='black';
+            switchSlider.style.backgroundColor='black';
+            switchSlider.className='slider day-mode';
+            prev.style.color='black';
+            next.style.color='black';
+             backgroundDay.style.opacity = 1;
+        backgroundNight.style.opacity = 0;
+            for (let button of buttons) {
+            button.style.color = 'white';
+            button.style.backgroundColor = 'black';
+        }
+
+    
+
+
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+    
+    const options = {
+        root: null, // Observing for viewport
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    // Callback function to execute when changes are observed
+    const observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible'); // Add visible to fade in
+            } else {
+                entry.target.classList.remove('visible'); // Remove to fade out
+            }
+        });
+    }, options);
+
+    // Target elements to observe
+    const targets = document.querySelectorAll('.fade-effect');
+    targets.forEach(target => {
+        observer.observe(target); 
+    });
+});
+
+
+function hideScrollText() {
+
+    const scrollText = document.getElementById("scrollText");
+
+    // Using window.scrollY for better compatibility
+    if (window.scrollY > 20) {
+        scrollText.classList.add("hide");
+
+    } else {
+        scrollText.classList.remove("hide");
+  
+    }
+}
+
+
+// Attach the function to window scroll event
+window.addEventListener('scroll', hideScrollText);
+
+
+    </script>
+
+</body>
+</html>
