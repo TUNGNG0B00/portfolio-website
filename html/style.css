@@ -184,8 +184,6 @@ a {
    content: attr(RELF-TEXT-2);
    animation-duration: 8s; /* Slower animation for subtle effect */
  }
- 
-
 
 .aboutHead {
    padding-left: 140px; 
