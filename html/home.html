@@ -351,45 +351,41 @@ function livePreview(url) {
 }
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Main videos
-    var video1 = document.getElementById('video1'); // Main video for project 1
-    var video2 = document.getElementById('video2');
-  
-    var reflection1 = document.getElementById('video-reflection1'); // Reflection video for project 1
-    var reflection2 = document.getElementById('video-reflection2'); 
+document.addEventListener('DOMContentLoaded', function() {
+    const greetings = ['Hello', 'Привет', 'Bonjour']; // English, Russian, French
+    const greetingDiv = document.getElementById('greetingText');
+    const loadingScreen = document.getElementById('loadingScreen');
+    let greetingIndex = 0;
 
-    // Function to play all videos
-    function playAllVideos() {
-        video1.play();
-        video2.play();
-        reflection1.play();
-        reflection2.play();
+    function changeGreeting() {
+        // Fade out the current greeting
+        greetingDiv.style.opacity = 0;
+
+        // Wait for the fade-out to complete
+        setTimeout(() => {
+            if (greetingIndex >= greetings.length) {
+                loadingScreen.style.opacity = '0';
+                document.body.style.overflow = 'auto'; // Enable scrolling if disabled
+
+                setTimeout(() => {
+                    loadingScreen.parentNode.removeChild(loadingScreen);
+                }, 1000); 
+            } else {
+                // Update to the next greeting and fade it in
+                greetingDiv.textContent = greetings[greetingIndex++];
+                greetingDiv.style.opacity = 1;
+            }
+        }, 200); // Match this delay with fade-out transition time in CSS
     }
 
-    // Function to pause all videos
-    function pauseAllVideos() {
-        video1.pause();
-        video2.pause();
-        reflection1.pause();
-        reflection2.pause();
-    }
-
-    // Check if videos are ready to play
-    var checkReadyState = setInterval(function () {
-      if (video1.readyState >= 3 && video2.readyState >= 3 &&
-          reflection1.readyState >= 3 && reflection2.readyState >= 3) {
-        playAllVideos();
-        clearInterval(checkReadyState);
-      }
-    }, 100);
-
-    // Synchronize play and pause across all videos
-    [video1, video2, reflection1, reflection2].forEach(function(video) {
-        video.addEventListener('play', playAllVideos);
-        video.addEventListener('pause', pauseAllVideos);
-    });
+    // Show the first greeting shortly after the page is visible
+    setTimeout(() => {
+        greetingDiv.textContent = greetings[greetingIndex++];
+        greetingDiv.style.opacity = 1;
+        setInterval(changeGreeting, 3000); 
+    }, 50);
 });
+
 
 
 //slideshow
