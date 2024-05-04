@@ -446,34 +446,30 @@ document.addEventListener('DOMContentLoaded', function() {
     greetingDiv.style.opacity = 1;
 
     function changeGreeting() {
-        // Fade out the current greeting
         greetingDiv.style.opacity = 0;
 
         setTimeout(() => {
             // Check if all greetings have been shown
             if (greetingIndex >= greetings.length) {
-                // Fade out the loading screen
                 loadingScreen.style.opacity = 0;
                 setTimeout(() => {
                     loadingScreen.parentNode.removeChild(loadingScreen);
                     document.body.style.overflow = 'auto'; // Restore scrolling
                 }, 1000); // Allow fade out before removal
             } else {
-                // Update to the next greeting and fade in
                 greetingDiv.textContent = greetings[greetingIndex++];
                 greetingDiv.style.opacity = 1;
             }
-        }, 200); // Short delay to allow fade out
+        }, 200); 
     }
 
-    // Change greeting every 800ms after the first one
+ 
     const greetingInterval = setInterval(() => {
         changeGreeting();
-        // Clear the interval after the last greeting has been shown
         if (greetingIndex >= greetings.length) {
             clearInterval(greetingInterval);
         }
-    }, 1000); // Adjust timing as needed
+    }, 1000); 
 });
 
 
